@@ -1,5 +1,5 @@
-# Redis server based on openSUSE Leap 15.1
-FROM fcrespel/base-image:opensuse15.1
+# Redis server based on openSUSE Leap 15.2
+FROM fcrespel/base-image:opensuse15.2
 
 # Redis
 RUN zypper in -y redis &&\
