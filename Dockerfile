@@ -7,8 +7,7 @@ RUN zypper in -y redis &&\
 
 # Files
 COPY ./root /
-RUN chmod +x /run.sh &&\
-	chmod a+rw /etc/passwd /etc/group &&\
+RUN chmod a+rw /etc/passwd /etc/group &&\
 	chmod -R a+rwX /var/lib/redis /var/lib/redis/default
 
 # Ports
